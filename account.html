@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="font-semibold text-6xl text-center mt-8">Let's <span class="text-orange-400">get</span> some <span class="text-red-400">moneeeeey!!!!!!!</span></h1>
+    <div class="grid grid-cols-3  mx-48 gap-4 mt-[100px] ">
+        <div class="bg-green-400 rounded-lg p-10 text-white font-semibold text-6xl">
+            <h1 class="pb-3">Deposit</h1>
+            <h1>$<span id="depoTotal">00</span></h1>
+
+        </div>
+        <div class="bg-orange-400 rounded-lg p-10 text-white font-semibold text-6xl">
+            <h1 class="pb-3">Withdraw</h1>
+            <h1>$<span id="withTotal">00</span></h1>
+
+        </div>
+        <div class="bg-purple-400 rounded-lg p-10 text-white font-semibold text-6xl">
+            <h1 class="pb-3" >Balance</h1>
+            <h1>$<span id="balTotal">00</span></h1>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 mt-10 mx-48 gap-10 h-52 " id="">
+        <div class="bg-indigo-400 rounded-lg text-white  p-10" id="">
+            <h1 class="font-semibold text-4xl mb-5">Please deposit</h1>
+            <input id="deposit_input" class="p-3 pl-3 w-3/4 rounded-md text-black" type="text" placeholder="Type your amount">
+            <br>
+            <button id="deposit_button" class="bg-orange-500  w-20 font-semibold p-2  rounded-md text-white hover:bg-orange-400 mt-4">Deposit</button>
+        </div>
+        
+        <div class="bg-sky-500 rounded-lg text-white  p-10" id="">
+            <h1 class="font-semibold text-4xl mb-5">Please Withdraw</h1>
+            <input id="withdraw_input" class="p-3 pl-3 w-3/4 rounded-md text-black" type="text" placeholder="Type your amount">
+            <br>
+            <button id="withdraw_button" class="bg-orange-500  w-24 font-semibold p-2 rounded-md text-white hover:bg-orange-400 mt-4">Withdraw</button>
+        </div>
+
+    </div>
+    <script src="account.js"></script>
+    
+</body>
+</html>
